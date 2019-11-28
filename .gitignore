@@ -1,3 +1,13 @@
+#echo "# payfast" >> README.md
+#git init
+#git add README.md
+#git commit -m "first commit"
+#git remote add origin https://github.com/brect/payfast.git
+#git push -u origin master
+
+
 # dependencies
 /node_modules
 /package-lock.json
+
+
