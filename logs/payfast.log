@@ -1,0 +1,8 @@
+{"level":"info","message":"consultando pagamento: 80","timestamp":"2016-09-01T15:18:07.128Z"}
+{"level":"info","message":"::1 - - [01/Sep/2016:15:18:07 +0000] \"GET /pagamentos/pagamento/80 HTTP/1.1\" 200 154\n","timestamp":"2016-09-01T15:18:07.167Z"}
+{"message":"consultando pagamento: 9","level":"info"}
+{"message":"::1 - - [29/Nov/2019:00:39:11 +0000] \"GET /pagamentos/pagamento/9 HTTP/1.1\" 500 156\n","level":"info"}
+{"message":"consultando pagamento: 38","level":"info"}
+{"message":"::1 - - [29/Nov/2019:00:51:42 +0000] \"GET /pagamentos/pagamento/38 HTTP/1.1\" 200 160\n","level":"info"}
+{"message":"consultando pagamento: 38","level":"info"}
+{"message":"::1 - - [29/Nov/2019:00:52:54 +0000] \"GET /pagamentos/pagamento/38 HTTP/1.1\" 200 160\n","level":"info"}

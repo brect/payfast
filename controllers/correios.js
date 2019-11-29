@@ -1,23 +1,18 @@
 module.exports = function(app){
 
+  app.post('/correios/calculo-prazo', function(req, res){
+    var dadosDaEntrega = req.body;
 
-    app.post('/correios/calcula-prazo', function(req, res){
-
-            //calcula o prazo atraves do terminal
-    //## curl http://localhost:3000/correios/calcula-prazo -X POST -v -H "Content-type: application/json" -d @files/dados-entrega.json ##
-
-        var dadosDaEntrega = req.body;
-
-        var correiosSOAPCliente = new app.servicos.correiosSOAPClient();
-
-        correiosSOAPCliente.calculaPrazo(dadosDaEntrega,
-            function (erro, resultado) {
-                if(erro){
-                    res.status.send(erro);
-                    return;
+    var correiosSOAPClient = new app.servicos.correiosSOAPClient();
+    correiosSOAPClient.calculaPrazo(dadosDaEntrega,
+              function(erro, resultado){
+                if (erro){
+                  res.status(500).send(erro);
+                  return;
                 }
-                console.log('...Prazo calculado...');
+                console.log('prazo calculado');
                 res.json(resultado);
-            });
-    });
+              });
+
+  });
 }
